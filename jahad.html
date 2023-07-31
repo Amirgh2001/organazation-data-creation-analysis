@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar"> <!-- Set the lang attribute to an RTL language code, like "ar" for Arabic -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Form App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container-rtl"> <!-- Add a new class for RTL layout -->
+        <h1>هزینه های مدیر مالی مرکز ساری</h1>
+        <form id="myForm" onsubmit="handlesubmit(event)">
+            <div class="section">
+                <label for="input1">شماره چک</label>
+                <input type="text" id="input1" name="input1">
+            </div>
+            <div class="section">
+                <label for="input1">تاریخ </label>
+                <input type="text" id="input1" name="input1">
+            </div>
+            <div class="section">
+                <label for="input1">مبلغ</label>
+                <input type="text" id="input1" name="input1">
+            </div>
+            <label for="cost type">نوع هزینه</label>
+            <select name="cost type" id="cars">
+                <option value="آموزشی">آموزشی</option>
+                <option value="غیرآموزشی">غیرآموزشی</option>
+              </select>
+            <label for="station">ایستگاه</label>
+            <select name="station" id="cars">
+                <option value="پاسند">پاسند</option>
+                <option value="میدان‌خزر">میدان‌خزر</option>
+                <option value="قائمشهر">قائمشهر</option>
+                <option value="قراخیل">قراخیل</option>
+                <option value="بابلسر">بابلسر</option>
+                <option value="سلمانشهر">سلمانشهر</option>
+                <option value="چمستان‌نور">چمستان‌نور</option>
+                <option value="خشکه‌داران">خشکه‌داران</option>
+              </select>
+              <label for="for">بابت</label>
+              <select name="for" id="cars">
+                  <option value="کود">کود</option>
+                  <option value="سم">سم</option>
+                  <option value="بیولوژیک">بیولوژیک</option>
+                  <option value="اجرا">اجرا</option>
+                  <option value="تاسیسات">تاسیسات</option>
+                  <option value="اجباری">اجباری</option>
+                  <option value="پاداش">پاداش</option>
+                  <option value="حقوقی-اداری">حقوقی-اداری</option>
+                  <option value="حق التدریس">حق التدریس</option>
+                  <option value="موارد دیگر">موارد دیگر</option>
+
+                </select>
+            <div class="section">
+                <label for="textarea">توضیحات</label>
+                <textarea name="paragraph_text" cols="48" rows="8"></textarea>
+            </div>
+            <!-- Repeat the section block for the remaining 11 sections -->
+            <button type="submit">ارسال</button>
+            <input type="reset" class="resetbtn" style="width: 100%;">
+        </form>
+    </div>
+</body>
+</html>
